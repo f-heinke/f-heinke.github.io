@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "vitae.html",
+    "href": "vitae.html",
+    "title": "vitae",
+    "section": "",
+    "text": "Educator\n\n\n2019-Present\n\n\nMittweida University of Applied Sciences (UAS)\n\n\n\n\nResearch Associate with the MINT-KOMPASS project  (KOMpetenz in der Lehre undPASSgenauigkeit in der Beratung)\n\n\n2016-2019\n\n\nUAS Mittweida\n\n\n\n\nResearch Associate\n\n\n2015\n\n\nUAS Mittweida\n\n\n\n\nPhD student,funded by the European Social Fund (ESF)\n\n\n2012 - 2015\n\n\nTU Bergakademie Freiberg and UAS Mittweida"
+  },
+  {
+    "objectID": "vitae.html#academic-appointments",
+    "href": "vitae.html#academic-appointments",
+    "title": "vitae",
+    "section": "",
+    "text": "Educator\n\n\n2019-Present\n\n\nMittweida University of Applied Sciences (UAS)\n\n\n\n\nResearch Associate with the MINT-KOMPASS project  (KOMpetenz in der Lehre undPASSgenauigkeit in der Beratung)\n\n\n2016-2019\n\n\nUAS Mittweida\n\n\n\n\nResearch Associate\n\n\n2015\n\n\nUAS Mittweida\n\n\n\n\nPhD student,funded by the European Social Fund (ESF)\n\n\n2012 - 2015\n\n\nTU Bergakademie Freiberg and UAS Mittweida"
+  },
+  {
+    "objectID": "vitae.html#education",
+    "href": "vitae.html#education",
+    "title": "vitae",
+    "section": "education",
+    "text": "education\n\n\nM.Sc. in Molecular Biology/Bioinformatics\n\n\n2010-2012\n\n\nUAS Mittweida\n\n\n\n\nB.Sc. in Biotechnology/Bioinformatics\n\n\n2007-2010\n\n\nUAS Mittweida\n\n\n\n\nAbitur\n\n\n2006\n\n\nGymnasium Burgstädt"
+  },
+  {
+    "objectID": "vitae.html#awards",
+    "href": "vitae.html#awards",
+    "title": "vitae",
+    "section": "awards",
+    "text": "awards\n\n\nBest Poster Award at the annual conference of the German Society for Legal Medicine  (Deutsche Gesellschaft für Rechtsmedizin)\n\n\n2024\n\n\n\n\nBest Oral Presentation Award at the conference of the German Society for Anthropology  (Deutsche Gesellschaft für Anthropologie)\n\n\n2023\n\n\n\n\nUAS Mittweida Award for excellence in teaching\n\n\n2021\n\n\n\n\nBest Paper Award at the 7th and 8th IMMM  (International Conference on Advances in Information Mining and Management)\n\n\n2017 & 2018\n\n\n\n\nBest Paper Award at the 14. Nachwuchswissenschaftlerkonferenz\n\n\n2013\n\n\n\n\nGIMI e.V. Award for outstanding academic achievement\n\n\n2012"
+  },
+  {
+    "objectID": "vitae.html#list-of-publications",
+    "href": "vitae.html#list-of-publications",
+    "title": "vitae",
+    "section": "list of publications",
+    "text": "list of publications"
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html",
+    "href": "posts/2025-05-17/index.html",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "",
+    "text": "Oh, hello world! This is my very first blog post, and on these pages, I plan to share a few things that I hope you’ll find interesting too. Let’s see where this journey takes us.\nTo start things off, I’d like to introduce a small project I’ve been working on-off over the last few months. And that project is bayesutils–a lightweight R package designed to make working with Stan-based Bayesian models a little smoother. You can find it on GitHub here. Essentially, this package is a collection of tools for working with posterior draws obtained from Markov Chain Monte Carlo samplers and the underlying Stan code. Please see the GitHub page for any technical details and an introduction. Here I’d rather go into the motivations behind it; I think this place is more fitting."
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#oh-hello-world",
+    "href": "posts/2025-05-17/index.html#oh-hello-world",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "",
+    "text": "Oh, hello world! This is my very first blog post, and on these pages, I plan to share a few things that I hope you’ll find interesting too. Let’s see where this journey takes us.\nTo start things off, I’d like to introduce a small project I’ve been working on-off over the last few months. And that project is bayesutils–a lightweight R package designed to make working with Stan-based Bayesian models a little smoother. You can find it on GitHub here. Essentially, this package is a collection of tools for working with posterior draws obtained from Markov Chain Monte Carlo samplers and the underlying Stan code. Please see the GitHub page for any technical details and an introduction. Here I’d rather go into the motivations behind it; I think this place is more fitting."
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#bayesian-statistics",
+    "href": "posts/2025-05-17/index.html#bayesian-statistics",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "Bayesian Statistics",
+    "text": "Bayesian Statistics\nI’ve long believed that learning statistics–as a student or teacher–can be more intuitive and meaningful if the first steps are taken on the ‘Bayesian road’. In my experience, this approach not only makes key concepts easier to grasp, but also lays the groundwork for understanding frequentist ideas more naturally down the line. That said, applying Bayesian methods in practice–despite major recent advances in computational tools like Stan–remains a real challenge, especially in a teaching context. Integral techniques, such as Hamiltonian Monte Carlo sampling, need to be taught and applied by students in order to fully understand the concepts … there is no way around that. Yet: difficulties!"
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#where-the-package-fits-in",
+    "href": "posts/2025-05-17/index.html#where-the-package-fits-in",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "Where the Package fits in",
+    "text": "Where the Package fits in\nThat’s exactly where this package comes in: The motivation for creating yet another R package in this space arose from my experience teaching Bayesian statistics and conducting research with Stan-based models. I frequently found myself writing and reusing custom functions to bridge gaps between several popular tools: Richard McElreath’s excellent rethinking package (which accompanies his highly recommended book Statistical Rethinking and had been a huge inspiration for this undertaking), the R6-based CmdStanR ecosystem, and the rstanarm interface (featured in Regression and Other Stories by Gelman, Hill, and Vehtari–a book full of engaging teaching ideas)."
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#born-in-the-class-room",
+    "href": "posts/2025-05-17/index.html#born-in-the-class-room",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "Born in the class room",
+    "text": "Born in the class room\nWhat started as a small collection of convenience functions–just some scripts and helper functions for extracting, transforming, and visualizing parameter draws–grew into something bigger. Whether the draws came from rstan, CmdStanR, or rethinking, I needed a consistent, interface-agnostic way to work with them. Simulating from prior and posterior predictive distributions and teaching students how to do it by themselves? That is a challenge on its own right. But one special persistent challenge remained a nag: how to compare draw distributions across models cleanly and intuitively? Why should it take so many coercions, castings, and package cross-calls just to show students the implications of the statistical models at hand? I wanted to cut through the technical noise and keep the focus on understanding–not mechanics. That need became especially clear when teaching: explaining complex Stan models became far more intuitive when broken into smaller, modular pieces. Why not build models incrementally, step by step, each part highlighting a key idea? So I began building functionality for modular Stan code generation; making it easier to construct, teach, and communicate models in a structured yet flexible way."
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#live-diagnostics",
+    "href": "posts/2025-05-17/index.html#live-diagnostics",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "Live Diagnostics",
+    "text": "Live Diagnostics\nAll of the above essentially addresses setting up models or analyzing results obtained from Monte Carlo samplers. But what about the sampling process itself? If you´re a Bayesian modeler–and maybe you´ve experienced this firsthand–you know the feeling: the situation of waiting patiently for the sampler to finish, only to find the sampling having gotten off the rails early on. In this regard, this meme is spot on (found in this nice read).\n\n\n\nBayesian modelling: Rather straightforward to grasp, but challenging to apply.\n\n\nAnd as Bayesian modelers we are also trained to always perform diagnostic checks through visualizations of sampling trajectories (often referred to as traceplots), after sampling is done. So why not check traceplots while sampling is taking place? Through that, one can quickly identify pathological problems, realize what might be wrong with the model, and abort the sampling, thus saving valuable time. The bayesutils offers this simple solution, although currently sampling through CmdStanR is supported only. In this solution, the log-files of the sampler are read and saved trajectories are visualized as traceplots, repeatedly updated in the process. You can quickly see if your sampler is healthy or spookily exploring the outer realms of infinity.\nThis simple idea has greatly impacted my personal workflow in research. For example I had to apply this functionality relentlessly in developing models for inferring chemical turnover rates based on UV-vis data obtained from aging blood samples. In the development process we tested many different modelling approaches, all requiring significant computational resources. And you maybe guessed it; some model ideas required refinements. Or to put it differently: These models had structural defects that made them slow and unfeasible to sample properly. By visualizing the sampler as it was producing unusable draws, we were discovering these defects early on. Having this kind of immediate feedback not only saved time and resources–it greatly shaped how we approached model development and debugging."
+  },
+  {
+    "objectID": "posts/2025-05-17/index.html#closing-throughts",
+    "href": "posts/2025-05-17/index.html#closing-throughts",
+    "title": "bayesutils – Yet another Bayesian Stats Package?",
+    "section": "Closing Throughts",
+    "text": "Closing Throughts\nOver time, this kit of helper scripts and functions evolved into an R package, now at an early stage ready to assist both students and researchers. So if you are one of those working directly with CmdStanR, rstanarm, or custom Stan code, you might find some implemented ideas helpful to integrate into your workflows. After all, I have to say that it is still WIP and far from a finished product. Yet I considered it might be of value for some and, thus, worthwhile sharing after all."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "courses",
+    "section": "",
+    "text": "Over the years I got lucky to be involved in a number of teaching endavours. Below you’ll find a (not entirely complete but fairly comprehensive) overview of recent courses, organized by area of study. Click to expand for more details."
+  },
+  {
+    "objectID": "courses.html#bachelor-of-general-and-digital-forensic-science",
+    "href": "courses.html#bachelor-of-general-and-digital-forensic-science",
+    "title": "courses",
+    "section": "bachelor of general and digital forensic science",
+    "text": "bachelor of general and digital forensic science\n\n\n\nBayesian Statistics for Forensic Scientists\n\n\n\nThis is the required stats module for the forensics curriculum at Mittweida. It serves as an introduction to probability theory and statistical modeling in forensic contexts, particularly when little or no data is available—yet inferences still need to be drawn by decision makers. In all this, emphasis is placed on acknowledging uncertainty and respecting statistical assumptions. I’ll be involved in lecturing as well as leading seminars and exercises. The course will begin in the upcoming winter semester, and it’ll be an engaging challenge for me.\n\n\n\n\n\nGeneral Forensics V (Models and Simulations in Forensics)\n\n\n\nThis course focuses on connecting forensic hypotheses with available evidence, applying computational modeling techniques, and using simulation-based methods for forensic inference. I taught the course as the seminar instructor.\n\n\n\n\n\nCausal Inference and Generative Modelling\n\n\n\nIn this course, I focus on teaching how anyone capable of coding a simulation of a process of interest can use it to drive statistical inferences based on analogous real-world data. Students learn how to apply graphical causal models to refine and adjust these statistical models–and, more importantly, they come to understand that data alone cannot reveal its underlying causes."
+  },
+  {
+    "objectID": "courses.html#bachelor-of-biotechnology",
+    "href": "courses.html#bachelor-of-biotechnology",
+    "title": "courses",
+    "section": "bachelor of biotechnology",
+    "text": "bachelor of biotechnology\n\n\n\nApplied Bioinformatics\n\n\n\nThis is a friendly step-by-step introduction to the R statistical programming language, tailored for biotech-students in the midst of their bachelor’s studies. The course is entirely tutorial-esque and driven by hands-on exercise. I am responsible for teaching it over the span of half a semester.\n\n\n\n\n\nProblem-driven Programming\n\n\n\nThis course provided an introduction to Python programming. It used to be a required course for students specialicing in bioinformatics. It was a great experience for me, because I got to deepen my own understaning of Python while teaching it."
+  },
+  {
+    "objectID": "courses.html#master-of-genomic-biotechnology",
+    "href": "courses.html#master-of-genomic-biotechnology",
+    "title": "courses",
+    "section": "master of genomic biotechnology",
+    "text": "master of genomic biotechnology\n\n\n\nBio-Data Visualization\n\n\n\nThis master’s-level course focuses on foundational topics in data visualization, including correlation analysis, dimensionality reduction, data projections; spinkled over with a mild pinch of machine learning. Students engage extensively in R programming, using tools like {ggplot2} and Quarto dashboards to create compelling visual narratives. In this rapidly changing field, keeping the course up-to-date is a good workout.\n\n\n\n\n\nMolecular Modelling and Drug Discovery\n\n\n\nTeaching this course has been always a pleasure, because it required to bring together all the pieces of my background. The course explored the relationships between protein structure, sequence, and function, with a particular focus on how these factors are associated to protein–drug compound interactions. A significant portion was dedicated to structure prediction methods and virtual screening, which involved a strong emphasis on machine learning techniques. This course was part of the Bioinformatics master’s program at the Mittweida University of Applied Sciences.\n\n\n\n\n\nBiodata Sciences\n\n\n\nWith this course, students are introduced to the mathematical abstraction of biological data, providing a foundation for effective data visualization and analysis. It covers commonly used techniques in unsupervised machine learning for exploratory analysis, as well as supervised learning methods, with an emphasis on vector quantization-based classifiers. I teach the course as the seminar instructor."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about me",
+    "section": "",
+    "text": "I currently teach students the fundamentals of data processing and analysis, along with broader concepts in (statistical) modeling. The courses are specifically designed for students in forensic science and biotechnology. As a former biotechnology student, my academic background is rooted in bioinformatics and molecular biology, with a specialization in computational analysis of protein sequences and structures. It was courses on these topics that I was first appointed to teach following my master’s studies.\n\nTeaching has always been part of my academic journey since then. I actually gained my first experiences by giving supplementary tutorials in bioinformatics, particularly helping students get to grips with coding in Java and Perl. Over the years, I took on more advanced courses in bioinformatics and, gradually, this engagement evolved into teaching courses with broader scopes; such as tutorials in R and Python programming, data visualization, and statistics.\nHere’s a list of selected courses I’m currently teaching, along with some I’ve taught in the past.\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudents and colleagues discussing results and data workflows. This photo was taken during our STEM summer school in 2019. I’m standing on the far left. I was involved in teaching the fundamentals of data visualization and processing."
+  },
+  {
+    "objectID": "about.html#in-teaching",
+    "href": "about.html#in-teaching",
+    "title": "about me",
+    "section": "",
+    "text": "I currently teach students the fundamentals of data processing and analysis, along with broader concepts in (statistical) modeling. The courses are specifically designed for students in forensic science and biotechnology. As a former biotechnology student, my academic background is rooted in bioinformatics and molecular biology, with a specialization in computational analysis of protein sequences and structures. It was courses on these topics that I was first appointed to teach following my master’s studies.\n\nTeaching has always been part of my academic journey since then. I actually gained my first experiences by giving supplementary tutorials in bioinformatics, particularly helping students get to grips with coding in Java and Perl. Over the years, I took on more advanced courses in bioinformatics and, gradually, this engagement evolved into teaching courses with broader scopes; such as tutorials in R and Python programming, data visualization, and statistics.\nHere’s a list of selected courses I’m currently teaching, along with some I’ve taught in the past.\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudents and colleagues discussing results and data workflows. This photo was taken during our STEM summer school in 2019. I’m standing on the far left. I was involved in teaching the fundamentals of data visualization and processing."
+  },
+  {
+    "objectID": "about.html#in-research",
+    "href": "about.html#in-research",
+    "title": "about me",
+    "section": " in research",
+    "text": "in research\nEducational activities require my full attention and, hence, drive my everyday academic schedule. Yet, I’m in the prestigious position to still be able to contribute to on-going research in Mittweida, in particular research conducted at the forensic research group–the Forensic Science Investigation Lab (FoSIL). There I consult colleagues regarding statistical modelling and machine learning; but I am also actively involved in projects focused on forensic anthropometry and bloodstain analyses, where I provide support as a data scientist. Recent scientific output includes the formulation of a Bayesian statistical model for the inference of blood stain age. There is also a complete list of publications, if you are interested. To find out more about the Forensic Science Investigation Lab, there is much to explore here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy little guy and I on vacation, taking a boat trip on the Red Sea. Gazing at vast marine life during this semi-submarine ride must have been very exhausting for him."
+  },
+  {
+    "objectID": "about.html#off-campus",
+    "href": "about.html#off-campus",
+    "title": "about me",
+    "section": " off campus",
+    "text": "off campus\nWhen I’m not teaching or working on research projects, you’ll most likely find me outdoors – hiking, exploring nature, or simply enjoying time outside. I dedicate much of my energy and love to spending time with my little one, which brings me endless joy and perspective. Music is another important part of my life: whether strumming a six-string guitar or slapping the four string, playing is both a creative outlet and a way to recharge. I also have a deep curiosity for data – I’m a bit obsessed with statistics, often collecting data just for fun, digging into scientific literature, and exploring new ways to visualize complex information."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Florian Heinke",
+    "section": "",
+    "text": "Welcome! I’m Florian Heinke, a university educator specializing in data science and statistics at the Mittweida University of Applied Sciences. With my background rooted in molecular biology and bioinformatics data analysis, my teaching focuses on equipping students with practical and thoughtful approaches to data analysis, grounded in core statistical principles and complemented by accessible, classical machine learning techniques. Beyond the classroom, my work extends into forensic research, where I apply statistical methods to complex, real-world problems.\n\n\nOutside of academia, I’m happiest outdoors–whether hiking a trail or simply enjoying time in nature. I also have a long-standing love for making music (though it’s been a day or two since I’ve performed on stage).\n\n\nThis site offers a window into my teaching, research, and broader interests. Thanks for visiting–I’m glad you’re here."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "posts & projects",
+    "section": "",
+    "text": "bayesutils – Yet another Bayesian Stats Package?\n\n\n\nbayesian statistics\n\nR\n\nbayesutils\n\n\n\nRelease of my Bayesian statistics R toolkit\n\n\n\n\n\nMay 17, 2025\n\n\n\n\n\nNo matching items"
+  }
+]

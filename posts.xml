@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Florian Heinke</title>
+<link>https://heineconk.github.io/posts.html</link>
+<atom:link href="https://heineconk.github.io/posts.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Fri, 16 May 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>bayesutils – Yet another Bayesian Stats Package?</title>
+  <link>https://heineconk.github.io/posts/2025-05-17/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="oh-hello-world" class="level2">
+<h2 class="anchored" data-anchor-id="oh-hello-world">Oh, Hello World!</h2>
+<p>Oh, hello world! This is my very first blog post, and on these pages, I plan to share a few things that I hope you’ll find interesting too. Let’s see where this journey takes us.</p>
+<p>To start things off, I’d like to introduce a small project I’ve been working on-off over the last few months. And that project is <code>bayesutils</code>–a lightweight <code>R</code> package designed to make working with <a href="https://mc-stan.org/">Stan</a>-based Bayesian models a little smoother. You can find it on <a href="https://github.com/HeineConK/bayesutils">GitHub here</a>. Essentially, this package is a collection of tools for working with posterior draws obtained from Markov Chain Monte Carlo samplers and the underlying Stan code. Please see the GitHub page for any technical details and an introduction. Here I’d rather go into the motivations behind it; I think this place is more fitting.</p>
+</section>
+<section id="bayesian-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-statistics">Bayesian Statistics</h2>
+<p>I’ve long believed that learning statistics–as a student or teacher–can be more intuitive and meaningful if the first steps are taken on the ‘Bayesian road’. In my experience, this approach not only makes key concepts easier to grasp, but also lays the groundwork for understanding frequentist ideas more naturally down the line. That said, applying Bayesian methods in practice–despite major recent advances in computational tools like Stan–remains a real challenge, especially in a teaching context. Integral techniques, such as Hamiltonian Monte Carlo sampling, need to be taught and applied by students in order to fully understand the concepts … there is no way around that. Yet: difficulties!</p>
+</section>
+<section id="where-the-package-fits-in" class="level2">
+<h2 class="anchored" data-anchor-id="where-the-package-fits-in">Where the Package fits in</h2>
+<p>That’s exactly where this package comes in: The motivation for creating <em>yet another</em> <code>R</code> package in this space arose from my experience teaching Bayesian statistics and conducting research with Stan-based models. I frequently found myself writing and reusing custom functions to bridge gaps between several popular tools: Richard <a href="https://github.com/rmcelreath/rethinking">McElreath’s excellent <code>rethinking</code> package</a> (which accompanies his highly recommended book <a href="https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath">Statistical Rethinking</a> and had been a huge inspiration for this undertaking), the R6-based <a href="https://mc-stan.org/cmdstanr/"><code>CmdStanR</code></a> ecosystem, and the <a href="https://mc-stan.org/rstanarm/index.html"><code>rstanarm</code></a> interface (featured in <a href="https://www.cambridge.org/highereducation/books/regression-and-other-stories/DD20DD6C9057118581076E54E40C372C#overview">Regression and Other Stories by Gelman, Hill, and Vehtari</a>–a book full of engaging teaching ideas).</p>
+</section>
+<section id="born-in-the-class-room" class="level2">
+<h2 class="anchored" data-anchor-id="born-in-the-class-room">Born in the class room</h2>
+<p>What started as a small collection of convenience functions–just some scripts and helper functions for extracting, transforming, and visualizing parameter draws–grew into something bigger. Whether the draws came from <code>rstan</code>, <code>CmdStanR</code>, or <code>rethinking</code>, I needed a consistent, interface-agnostic way to work with them. Simulating from prior and posterior predictive distributions and teaching students how to do it by themselves? That is a challenge on its own right. But one special persistent challenge remained a nag: how to compare draw distributions across models cleanly and intuitively? Why should it take so many coercions, castings, and package cross-calls just to show students the implications of the statistical models at hand? I wanted to cut through the technical noise and keep the focus on understanding–not mechanics. That need became especially clear when teaching: explaining complex Stan models became far more intuitive when broken into smaller, modular pieces. Why not build models incrementally, step by step, each part highlighting a key idea? So I began building functionality for modular Stan code generation; making it easier to construct, teach, and communicate models in a structured yet flexible way.</p>
+</section>
+<section id="live-diagnostics" class="level2">
+<h2 class="anchored" data-anchor-id="live-diagnostics">Live Diagnostics</h2>
+<p>All of the above essentially addresses setting up models or analyzing results obtained from Monte Carlo samplers. But what about the sampling process itself? If you´re a Bayesian modeler–and maybe you´ve experienced this firsthand–you know the feeling: the situation of waiting patiently for the sampler to finish, only to find the sampling having gotten off the rails early on. In this regard, this meme is spot on (found in <a href="https://mindfulmodeler.substack.com/p/bayesian-inference-from-first-principles">this nice read</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://heineconk.github.io/posts/2025-05-17/media/bayesian-interstellar.webp" class="img-fluid figure-img"></p>
+<figcaption><span style="text-align:center;">Bayesian modelling: Rather straightforward to grasp, but challenging to apply.</span></figcaption>
+</figure>
+</div>
+<p>And as Bayesian modelers we are also trained to always perform diagnostic checks through visualizations of sampling trajectories (often referred to as traceplots), after sampling is done. So why not check traceplots while sampling is taking place? Through that, one can quickly identify pathological problems, realize what might be wrong with the model, and abort the sampling, thus saving valuable time. The <code>bayesutils</code> offers this simple solution, although currently sampling through <code>CmdStanR</code> is supported only. In this solution, the log-files of the sampler are read and saved trajectories are visualized as traceplots, repeatedly updated in the process. You can quickly see if your sampler is healthy or spookily exploring the outer realms of infinity.</p>
+<p>This simple idea has greatly impacted my personal workflow in research. For example I had to apply this functionality relentlessly in developing models for <a href="https://link.springer.com/article/10.1007/s00194-025-00750-y">inferring chemical turnover rates based on UV-vis data obtained from aging blood samples</a>. In the development process we tested many different modelling approaches, all requiring significant computational resources. And you maybe guessed it; some model ideas required refinements. Or to put it differently: These models had structural defects that made them slow and unfeasible to sample properly. By visualizing the sampler as it was producing unusable draws, we were discovering these defects early on. Having this kind of immediate feedback not only saved time and resources–it greatly shaped how we approached model development and debugging.</p>
+</section>
+<section id="closing-throughts" class="level2">
+<h2 class="anchored" data-anchor-id="closing-throughts">Closing Throughts</h2>
+<p>Over time, this kit of helper scripts and functions evolved into an <code>R</code> package, now at an early stage ready to assist both students and researchers. So if you are one of those working directly with <code>CmdStanR</code>, <code>rstanarm</code>, or custom Stan code, you might find some implemented ideas helpful to integrate into your workflows. After all, I have to say that it is still WIP and far from a finished product. Yet I considered it might be of value for some and, thus, worthwhile sharing after all.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>bayesian statistics</category>
+  <category>R</category>
+  <category>bayesutils</category>
+  <guid>https://heineconk.github.io/posts/2025-05-17/</guid>
+  <pubDate>Fri, 16 May 2025 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
